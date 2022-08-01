@@ -1,0 +1,27 @@
+ALGORITHM algorithm_name
+VAR
+   sent:STRING;
+   n_c,n_v,n_w:INTEGER
+   C/CHAR;
+
+BEGIN
+
+    n_c:=0;
+    n_v:=0;
+    n_w:=1;
+
+    Read(sent)
+WHILE (c <> ".") DO
+    n_c:=n_c+1;
+    IF (c in["a","e","i","u","o","y","A","E","I","U"...])  THEN
+    n_v:=n_v+1;
+    END_IF
+IF (C=" ") THEN
+    n_w:=n_w+1;
+END_IF
+END_WHILE
+ Write (n_c)
+ Write (n_v)
+ Write (n_w)
+
+    END
